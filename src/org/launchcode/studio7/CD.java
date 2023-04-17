@@ -1,10 +1,12 @@
 package org.launchcode.studio7;
 
-public class CD {
+public class CD extends BaseDisk implements OpticalDisk {
 
-    // TODO: Implement your custom interface.
-
-    // TODO: Determine which fields, methods, and constructors can be extended from the base class and which ones
-    //  need to be declared separately.
+    public CD(String aName, int maxStorage, int remainingStorage, String contents){
+        name = aName;
+        this.maxStorage = maxStorage;
+        this.remainingStorage = remainingStorage;
+        this.contents = contents;
+    }
 
 }
