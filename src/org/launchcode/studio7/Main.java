@@ -10,3 +10,10 @@ public class Main {
 
     }
 }
+/*Interface should have
+* Spin Disk, Read Disk, Write Disk
+* */
+
+/* Abstract
+Name, MaxStorage, RemainingStorage, Contents
+* */
