@@ -9,12 +9,12 @@ public abstract class BaseDisk {
     private String name;
     private int maxStorage;
     private int remainingStorage;
-    private ArrayList<String> contents;
+    public ArrayList<String> stuffInDisk;
 
     public BaseDisk(String aName, int maxCapacity, int remainingCapacity, ArrayList<String> stuffInDisk){
         name = aName;
         maxStorage = maxCapacity;
         remainingStorage = remainingCapacity;
-        contents = stuffInDisk;
+        this.stuffInDisk = stuffInDisk;
     }
 }

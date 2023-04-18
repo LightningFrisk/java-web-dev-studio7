@@ -14,4 +14,8 @@ public class CD extends BaseDisk implements OpticalDisk {
         System.out.println("Disk is being read: ");
         //System.out.println();
     }
+    public String writeDisk(String input){
+        this.stuffInDisk.add(input);
+        return "Data written to disk";
+    }
 }

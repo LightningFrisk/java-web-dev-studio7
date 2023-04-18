@@ -12,6 +12,14 @@ public class DVD extends BaseDisk implements OpticalDisk{
     };
     public void readDisk(){
         System.out.println("Disk is being read: ");
-        //System.out.println();
+        if(this.stuffInDisk.isEmpty()){
+            System.out.println("This disk is empty");
+        } else {
+            System.out.println(stuffInDisk);
+        }
     };
+    public String writeDisk(String input){
+        this.stuffInDisk.add(input);
+        return "Data written to disk";
+    }
 }
